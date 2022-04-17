@@ -62,9 +62,9 @@ body {
   margin: auto;
   display: inline-block;
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
+  bottom: 1px;
+  left: 1;
+  right: 1;
 }
 
 .notfound a {
