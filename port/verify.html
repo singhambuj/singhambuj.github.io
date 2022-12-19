@@ -1,0 +1,1212 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+    <head id="head">
+        <script src="/static/libraries/web_vitals/web-vitals.umd.js"></script>
+        <script>
+    function sendToGTM(name, delta, id) {
+        // Assumes the global `dataLayer` array exists, see:
+        // https://developers.google.com/tag-manager/devguide
+        if(typeof dataLayer !== 'undefined'){
+            dataLayer.push({
+                event: 'web-vitals',
+                event_category: 'Web Vitals',
+                event_action: name.name,
+                // Google Analytics metrics must be integers, so the value is rounded.
+                // For CLS the value is first multiplied by 1000 for greater precision
+                // (note: increase the multiplier for greater precision if needed).
+                event_value: Math.round(name.name === 'CLS' ? name.delta * 1000 : name.delta),
+                // The 'id' value will be unique to the current page load. When sending
+                // multiple values from the same page (e.g. for CLS), Google Analytics can
+                // compute a total by grouping on this ID (note: requires `eventLabel` to
+                // be a dimension in your report).
+                event_label: name.id,
+            });
+        }
+    }
+    webVitals.getCLS(sendToGTM);
+    webVitals.getFID(sendToGTM);
+    webVitals.getLCP(sendToGTM);
+    webVitals.getFCP(sendToGTM);
+    webVitals.getTTFB(sendToGTM);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TL6GST7');</script>
+<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Ads: 811441815 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-811441815"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-811441815');
+</script>                <link rel="shortcut icon" type="image/x-icon" href="https://trainings.internshala.com/static/images/icons/ist_favicon.png?v=1671348403" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+            <meta property="og:type" content="website" />
+            <meta property="fb:app_id" content="702141670710132" />
+
+
+                            <meta property = "og:url" content = "https://trainings.internshala.com/" />
+                <meta property = "og:title" content = "Internshala Online Trainings" />
+                <meta property = "og:image" content = "https://trainings.internshala.com/static/images/og-image.png" />
+                <meta property = "og:description" content = "Internshala Online Trainings" />
+
+                
+            <script
+            src="/static/js/includes/jquery-3.3.1.min.js"></script>
+            <script
+            src="/static/js/includes/jquery-ui.min.js"></script>
+
+                    <title >Certificate Verification | Internshala Trainings</title>
+        <meta name="description" content="Internshala Trainings" />
+        <link href="/static/css/home/verify_certificate.1671358328.css" rel="stylesheet" type="text/css" />
+        <script src="/static/js/error-handler.1657773672.js" type="text/javascript" defer ></script>
+        <script src="/static/js/track.1657773672.js" type="text/javascript" defer ></script>
+        <script src="/static/js/build/vendor.1671358327.js" type="text/javascript" defer ></script>
+        <script src="/static/js/common.1657773672.js" type="text/javascript" defer ></script>
+        <script src="/static/js/build/verify-certificate.1671358327.js" type="text/javascript" defer ></script>
+
+            <link rel="canonical" href="{{$current_url}}">
+    </head>
+    <body ng-app="vtcApp" ng-cloak>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL6GST7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <div id='ribbon_notification' class="notification notification_ribbon">
+        </div>
+
+        <div id="wrapper" ng-controller="mainController">
+            <div id='success_notification' class="notification notification_success"></div>
+            <div id='error_notification' class="notification notification_error"></div>
+            <div id="header">
+                <div class="backdrop"></div>
+<div id="navbar-container" ng-init="$root.csrfHash = '19345e07b2e9361929ecb88eabc06a62'">
+    <div class='layer' onclick="closeNav()"></div>
+    <div id="mySidenav" class="sidenav hidden-md hidden-lg">
+                    <div class="ham_menu_items profile_container">
+                <div class="profile_icon">A</div>
+                <div class="profile_details">
+                    <span id="profile_name">Ambuj Singh</span><br>
+                    <span id="profile_email">7ambujsingh@gmail.com</span>
+                </div>
+            </div>
+                            <div class="ham_menu_training_items ham_menu_items">
+                    <a href="/dashboard"><p>Go to Dashboard</p></a>
+                </div>
+                                    <div class="ham_menu_training_items ham_menu_items">
+                        <a href="/referral?isrp_tracking_source=hamburger_menu"><p>Refer & Earn</p></a>
+                    </div>
+                
+        <div class="ham_menu_header">Choose your training
+                            <span class="tag tag-80-off">70% OFF</span>
+                    </div>
+
+                    <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Programming                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/web-development-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Web Development                        </a>
+                                                <a href=/python-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Programming with Python                        </a>
+                                                <a href=/c-plus-plus-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Programming with C and C++                        </a>
+                                                <a href=/java-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Core Java                        </a>
+                                                <a href=/android-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Android App Development                        </a>
+                                                <a href=/hacking-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Ethical Hacking                        </a>
+                                                <a href=/react-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            React                        </a>
+                                                <a href=/data-structures-algorithms-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Data Structures & Algorithms                        </a>
+                                                <a href=/clinical-trials-analysis-reporting-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Clinical Trial Analysis & Reporting                        </a>
+                                                <a href=/blockchain-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Blockchain                        </a>
+                                                <a href=/matlab-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            MATLAB                        </a>
+                                                <a href=/software-testing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Software Testing                        </a>
+                                                <a href=/aws-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Cloud computing with AWS                        </a>
+                                                <a href=/plc-programming-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            PLC Programming                        </a>
+                                                <a href=/product-management-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Product Management                        </a>
+                                                <a href=/nodejs-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Node JS                        </a>
+                                                <a href=/sas-programming-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            SAS Programming                        </a>
+                                                <a href=/angular-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Angular                        </a>
+                                                <a href=/robotic-process-automation-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Robotic Process Automation                        </a>
+                                                <a href=/ar-vr-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            AR/VR                        </a>
+                                                <a href=/git-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Git & GitHub                        </a>
+                                                <a href=/voice-apps-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Voice App Development                        </a>
+                                                <a href=/how-to-ace-coding-interviews-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            How to Ace Coding Interviews                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Business & Management                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/digital-marketing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Digital Marketing                        </a>
+                                                <a href=/excel-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Advanced Excel                        </a>
+                                                <a href=/financial-modeling-valuation-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Financial Modeling and Valuation                        </a>
+                                                <a href=/business-analytics-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Business Analytics                        </a>
+                                                <a href=/hr-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Human Resource Management
+                        </a>
+                                                <a href=/business-communication-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Business Communication Skills                        </a>
+                                                <a href=/stock-market-trading-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Stock Market Trading                        </a>
+                                                <a href=/tally-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Tally                        </a>
+                                                <a href=/sql-data-analytics-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            SQL for Data Analytics                        </a>
+                                                <a href=/hr-advanced-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Advanced Human Resource Management                        </a>
+                                                <a href=/product-management-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Product Management                        </a>
+                                                <a href=/personal-finance-101-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Personal Finance 101                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Core Engineering                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/autocad-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            AutoCAD                        </a>
+                                                <a href=/vlsi-design-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            VLSI Design                        </a>
+                                                <a href=/solidworks-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            SOLIDWORKS                        </a>
+                                                <a href=/matlab-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            MATLAB                        </a>
+                                                <a href=/ansys-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Ansys                        </a>
+                                                <a href=/catia-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            CATIA                        </a>
+                                                <a href=/staad-pro-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            STAAD Pro                        </a>
+                                                <a href=/plc-programming-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            PLC Programming                        </a>
+                                                <a href=/arduino-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Arduino                        </a>
+                                                <a href=/autocad-three-d-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            AutoCAD 3D                        </a>
+                                                <a href=/advanced-solidworks-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Advanced SOLIDWORKS                        </a>
+                                                <a href=/fusion-360-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Fusion 360                        </a>
+                                                <a href=/iot-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Internet of Things                        </a>
+                                                <a href=/siemens-nx-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Siemens NX                        </a>
+                                                <a href=/three-d-printing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            3D Printing                        </a>
+                                                <a href=/embedded-systems-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Embedded Systems                        </a>
+                                                <a href=/labview-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            LabVIEW                        </a>
+                                                <a href=/engineering-drawing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Engineering Drawing                        </a>
+                                                <a href=/creo-parametric-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Creo Parametric                        </a>
+                                                <a href=/pcb-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            PCB Design                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Data Science                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/machine-learning-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Machine Learning                        </a>
+                                                <a href=/data-science-beginner-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Data Science                        </a>
+                                                <a href=/business-analytics-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Business Analytics                        </a>
+                                                <a href=/clinical-trials-analysis-reporting-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Clinical Trial Analysis & Reporting                        </a>
+                                                <a href=/sql-data-analytics-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            SQL for Data Analytics                        </a>
+                                                <a href=/power-bi-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Power BI                        </a>
+                                                <a href=/deep-learning-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Deep Learning                        </a>
+                                                <a href=/tableau-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Tableau                        </a>
+                                                <a href=/sas-programming-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            SAS Programming                        </a>
+                                                <a href=/natural-language-processing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Natural Language Processing                        </a>
+                                                <a href=/statistics-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Statistics for Data Science                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Design                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/ui-ux-design-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            UI/UX Design                        </a>
+                                                <a href=/graphic-design-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Graphic Design                        </a>
+                                                <a href=/video-editing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Video Editing                        </a>
+                                                <a href=/animation-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Animation                        </a>
+                                                <a href=/digital-art-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Digital Art                        </a>
+                                                <a href=/wordpress-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            WordPress                        </a>
+                                                <a href=/colour-theory-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Colour Theory for Designers                        </a>
+                                                <a href=/adobe-illustrator-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Adobe Illustrator                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Creative Arts                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/creative-writing-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Creative Writing                        </a>
+                                                <a href=/photography-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Photography                        </a>
+                                                <a href=/guitar-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Guitar                        </a>
+                                                <a href=/calligraphy-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Calligraphy                        </a>
+                                                <a href=/acting-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Acting                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Language                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/french-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            French Language                        </a>
+                                                <a href=/spanish-language-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Spanish Language                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Career Development                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/business-communication-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Business Communication Skills                        </a>
+                                                <a href=/ppt-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Internship & Job Preparation                        </a>
+                                                <a href=/how-to-ace-coding-interviews-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            How to Ace Coding Interviews                        </a>
+                                                <a href=/interview-preparation-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Interview Preparation                        </a>
+                                                <a href=/quantitative-aptitude-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Quantitative Aptitude                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Architecture                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/autocad-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            AutoCAD                        </a>
+                                                <a href=/revit-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Revit                        </a>
+                                                <a href=/autocad-three-d-course . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            AutoCAD 3D                        </a>
+                                        </div>
+            </div>
+                        <div class="ham_menu_training_items ham_menu_items">
+                <div class="ham_title">Placement Guarantee courses                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                                            <a href=/full-stack-web-development-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Full Stack Development Course                        </a>
+                                                <a href=/data-science-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Data Science Course                        </a>
+                                                <a href=/human-resource-management-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Human Resource Management Course                        </a>
+                                                <a href=/digital-marketing-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Digital Marketing Course                        </a>
+                                                <a href=/product-management-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            Product Management Course                        </a>
+                                                <a href=/ui-ux-specialization . "/?tracking_source=$tracking_source_ham_prefix-". strtolower(implode('-', (explode(' ',$category)))) ."$tracking_source_suffix"  ?>">
+                            UI/UX Design Course                        </a>
+                                        </div>
+            </div>
+            
+
+
+                <div class="ham_menu_items">
+            <a href="https://trainings.internshala.com/help_center">
+                <div class="ham_title">
+                    Help Center
+                </div>
+            </a>
+        </div>
+
+                    <div class="ham_menu_items">
+                <div class="ham_title">More
+                    <span class="glyphicon glyphicon-menu-down pull-right"></span>
+                    <span class="glyphicon glyphicon-menu-up pull-right"></span>
+                </div>
+                <div class="ham_submenu_items">
+                    <a href="/logout">Logout</a>
+                </div>
+            </div>
+            </div>
+
+    <nav class="navbar navbar-default navbar-treat" id="navbar">
+        <div class="container-fluid max-width-container max-width-padding">
+            <img class="hidden-md hidden-lg" id="hamburger_menu_key" src="/static/images/icons/hamburger-menu-key.svg" onclick="openNav()">
+              
+                <span class="offer_hamburger_dot hidden-md hidden-lg" style="position: absolute; top: 18px;left: 32px; z-index: 1050;"><img src="/static/images/icons/hamburger-dot.svg"></span>
+                        <div class="navbar-header-item">
+                <a class="navbar-brand" href="/">
+                    <img id="logo_image" src="/static/images/logo.svg?v=1.0">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="dropdown">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id ="header-dropdown" class="dropdown-hover">
+                        <a href="#" class="scroll_to_know_more-header" id="scroll_to_know_more">
+                                <span>Online Trainings</span>
+                                <i class="caret dual-caret"></i>
+                        </a>
+                                                <div class="dropdown-menu" id="trainings-dropdown" style="display: none;">
+                                                        <div class="category-list" >
+                                        <div class="normal-categories">
+                                                                                            <div id="menu_RecommendedforYou" class="category-selector active-category" ><p>Recommended for You</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_Programming" class="category-selector " ><p>Programming</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_BusinessManagement" class="category-selector " ><p>Business & Management</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_CoreEngineering" class="category-selector " ><p>Core Engineering</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_DataScience" class="category-selector " ><p>Data Science</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_Design" class="category-selector " ><p>Design</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_CreativeArts" class="category-selector " ><p>Creative Arts</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_Language" class="category-selector " ><p>Language</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_CareerDevelopment" class="category-selector " ><p>Career Development</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_Architecture" class="category-selector " ><p>Architecture</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                            <div id="menu_PlacementGuaranteecourses" class="category-selector " ><p>Placement Guarantee courses</p><div class = "arrow-icon"><i class="fa fa-angle-right"></i></div></div>
+                                                                                    </div>
+                                </div>
+                                <div class="course-list-container">
+                                                                
+                                        <section class="course-list show" id="courses_menu_RecommendedforYou">
+                                                                                            <div class="course"><a href="/web-development-course/?tracking_source=trainings-dropdown-recommended-for-you">Web Development</a></div>
+                                                                                            <div class="course"><a href="/data-structures-algorithms-course/?tracking_source=trainings-dropdown-recommended-for-you">Data Structures & Algorithms</a></div>
+                                                                                            <div class="course"><a href="/python-course/?tracking_source=trainings-dropdown-recommended-for-you">Programming with Python</a></div>
+                                                                                            <div class="course"><a href="/machine-learning-course/?tracking_source=trainings-dropdown-recommended-for-you">Machine Learning</a></div>
+                                                                                            <div class="course"><a href="/react-course/?tracking_source=trainings-dropdown-recommended-for-you">React</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_Programming">
+                                                                                            <div class="course"><a href="/web-development-course/?tracking_source=trainings-dropdown-programming">Web Development</a></div>
+                                                                                            <div class="course"><a href="/python-course/?tracking_source=trainings-dropdown-programming">Programming with Python</a></div>
+                                                                                            <div class="course"><a href="/c-plus-plus-course/?tracking_source=trainings-dropdown-programming">Programming with C and C++</a></div>
+                                                                                            <div class="course"><a href="/java-course/?tracking_source=trainings-dropdown-programming">Core Java</a></div>
+                                                                                            <div class="course"><a href="/android-course/?tracking_source=trainings-dropdown-programming">Android App Development</a></div>
+                                                                                            <div class="course"><a href="/hacking-course/?tracking_source=trainings-dropdown-programming">Ethical Hacking</a></div>
+                                                                                            <div class="course"><a href="/react-course/?tracking_source=trainings-dropdown-programming">React</a></div>
+                                                                                            <div class="course"><a href="/data-structures-algorithms-course/?tracking_source=trainings-dropdown-programming">Data Structures & Algorithms</a></div>
+                                                                                            <div class="course"><a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-dropdown-programming">Clinical Trial Analysis & Reporting</a></div>
+                                                                                            <div class="course"><a href="/blockchain-course/?tracking_source=trainings-dropdown-programming">Blockchain</a></div>
+                                                                                            <div class="course"><a href="/matlab-course/?tracking_source=trainings-dropdown-programming">MATLAB</a></div>
+                                                                                            <div class="course"><a href="/software-testing-course/?tracking_source=trainings-dropdown-programming">Software Testing</a></div>
+                                                                                            <div class="course"><a href="/aws-course/?tracking_source=trainings-dropdown-programming">Cloud computing with AWS</a></div>
+                                                                                            <div class="course"><a href="/plc-programming-course/?tracking_source=trainings-dropdown-programming">PLC Programming</a></div>
+                                                                                            <div class="course"><a href="/product-management-course/?tracking_source=trainings-dropdown-programming">Product Management</a></div>
+                                                                                            <div class="course"><a href="/nodejs-course/?tracking_source=trainings-dropdown-programming">Node JS</a></div>
+                                                                                            <div class="course"><a href="/sas-programming-course/?tracking_source=trainings-dropdown-programming">SAS Programming</a></div>
+                                                                                            <div class="course"><a href="/angular-course/?tracking_source=trainings-dropdown-programming">Angular</a></div>
+                                                                                            <div class="course"><a href="/robotic-process-automation-course/?tracking_source=trainings-dropdown-programming">Robotic Process Automation</a></div>
+                                                                                            <div class="course"><a href="/ar-vr-course/?tracking_source=trainings-dropdown-programming">AR/VR</a></div>
+                                                                                            <div class="course"><a href="/git-course/?tracking_source=trainings-dropdown-programming">Git & GitHub</a></div>
+                                                                                            <div class="course"><a href="/voice-apps-course/?tracking_source=trainings-dropdown-programming">Voice App Development</a></div>
+                                                                                            <div class="course"><a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-dropdown-programming">How to Ace Coding Interviews</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_BusinessManagement">
+                                                                                            <div class="course"><a href="/digital-marketing-course/?tracking_source=trainings-dropdown-business-&-management">Digital Marketing</a></div>
+                                                                                            <div class="course"><a href="/excel-course/?tracking_source=trainings-dropdown-business-&-management">Advanced Excel</a></div>
+                                                                                            <div class="course"><a href="/financial-modeling-valuation-course/?tracking_source=trainings-dropdown-business-&-management">Financial Modeling and Valuation</a></div>
+                                                                                            <div class="course"><a href="/business-analytics-course/?tracking_source=trainings-dropdown-business-&-management">Business Analytics</a></div>
+                                                                                            <div class="course"><a href="/hr-course/?tracking_source=trainings-dropdown-business-&-management">Human Resource Management
+</a></div>
+                                                                                            <div class="course"><a href="/business-communication-course/?tracking_source=trainings-dropdown-business-&-management">Business Communication Skills</a></div>
+                                                                                            <div class="course"><a href="/stock-market-trading-course/?tracking_source=trainings-dropdown-business-&-management">Stock Market Trading</a></div>
+                                                                                            <div class="course"><a href="/tally-course/?tracking_source=trainings-dropdown-business-&-management">Tally</a></div>
+                                                                                            <div class="course"><a href="/sql-data-analytics-course/?tracking_source=trainings-dropdown-business-&-management">SQL for Data Analytics</a></div>
+                                                                                            <div class="course"><a href="/hr-advanced-course/?tracking_source=trainings-dropdown-business-&-management">Advanced Human Resource Management</a></div>
+                                                                                            <div class="course"><a href="/product-management-course/?tracking_source=trainings-dropdown-business-&-management">Product Management</a></div>
+                                                                                            <div class="course"><a href="/personal-finance-101-course/?tracking_source=trainings-dropdown-business-&-management">Personal Finance 101</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_CoreEngineering">
+                                                                                            <div class="course"><a href="/autocad-course/?tracking_source=trainings-dropdown-core-engineering">AutoCAD</a></div>
+                                                                                            <div class="course"><a href="/vlsi-design-course/?tracking_source=trainings-dropdown-core-engineering">VLSI Design</a></div>
+                                                                                            <div class="course"><a href="/solidworks-course/?tracking_source=trainings-dropdown-core-engineering">SOLIDWORKS</a></div>
+                                                                                            <div class="course"><a href="/matlab-course/?tracking_source=trainings-dropdown-core-engineering">MATLAB</a></div>
+                                                                                            <div class="course"><a href="/ansys-course/?tracking_source=trainings-dropdown-core-engineering">Ansys</a></div>
+                                                                                            <div class="course"><a href="/catia-course/?tracking_source=trainings-dropdown-core-engineering">CATIA</a></div>
+                                                                                            <div class="course"><a href="/staad-pro-course/?tracking_source=trainings-dropdown-core-engineering">STAAD Pro</a></div>
+                                                                                            <div class="course"><a href="/plc-programming-course/?tracking_source=trainings-dropdown-core-engineering">PLC Programming</a></div>
+                                                                                            <div class="course"><a href="/arduino-course/?tracking_source=trainings-dropdown-core-engineering">Arduino</a></div>
+                                                                                            <div class="course"><a href="/autocad-three-d-course/?tracking_source=trainings-dropdown-core-engineering">AutoCAD 3D</a></div>
+                                                                                            <div class="course"><a href="/advanced-solidworks-course/?tracking_source=trainings-dropdown-core-engineering">Advanced SOLIDWORKS</a></div>
+                                                                                            <div class="course"><a href="/fusion-360-course/?tracking_source=trainings-dropdown-core-engineering">Fusion 360</a></div>
+                                                                                            <div class="course"><a href="/iot-course/?tracking_source=trainings-dropdown-core-engineering">Internet of Things</a></div>
+                                                                                            <div class="course"><a href="/siemens-nx-course/?tracking_source=trainings-dropdown-core-engineering">Siemens NX</a></div>
+                                                                                            <div class="course"><a href="/three-d-printing-course/?tracking_source=trainings-dropdown-core-engineering">3D Printing</a></div>
+                                                                                            <div class="course"><a href="/embedded-systems-course/?tracking_source=trainings-dropdown-core-engineering">Embedded Systems</a></div>
+                                                                                            <div class="course"><a href="/labview-course/?tracking_source=trainings-dropdown-core-engineering">LabVIEW</a></div>
+                                                                                            <div class="course"><a href="/engineering-drawing-course/?tracking_source=trainings-dropdown-core-engineering">Engineering Drawing</a></div>
+                                                                                            <div class="course"><a href="/creo-parametric-course/?tracking_source=trainings-dropdown-core-engineering">Creo Parametric</a></div>
+                                                                                            <div class="course"><a href="/pcb-course/?tracking_source=trainings-dropdown-core-engineering">PCB Design</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_DataScience">
+                                                                                            <div class="course"><a href="/machine-learning-course/?tracking_source=trainings-dropdown-data-science">Machine Learning</a></div>
+                                                                                            <div class="course"><a href="/data-science-beginner-course/?tracking_source=trainings-dropdown-data-science">Data Science</a></div>
+                                                                                            <div class="course"><a href="/business-analytics-course/?tracking_source=trainings-dropdown-data-science">Business Analytics</a></div>
+                                                                                            <div class="course"><a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-dropdown-data-science">Clinical Trial Analysis & Reporting</a></div>
+                                                                                            <div class="course"><a href="/sql-data-analytics-course/?tracking_source=trainings-dropdown-data-science">SQL for Data Analytics</a></div>
+                                                                                            <div class="course"><a href="/power-bi-course/?tracking_source=trainings-dropdown-data-science">Power BI</a></div>
+                                                                                            <div class="course"><a href="/deep-learning-course/?tracking_source=trainings-dropdown-data-science">Deep Learning</a></div>
+                                                                                            <div class="course"><a href="/tableau-course/?tracking_source=trainings-dropdown-data-science">Tableau</a></div>
+                                                                                            <div class="course"><a href="/sas-programming-course/?tracking_source=trainings-dropdown-data-science">SAS Programming</a></div>
+                                                                                            <div class="course"><a href="/natural-language-processing-course/?tracking_source=trainings-dropdown-data-science">Natural Language Processing</a></div>
+                                                                                            <div class="course"><a href="/statistics-course/?tracking_source=trainings-dropdown-data-science">Statistics for Data Science</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_Design">
+                                                                                            <div class="course"><a href="/ui-ux-design-course/?tracking_source=trainings-dropdown-design">UI/UX Design</a></div>
+                                                                                            <div class="course"><a href="/graphic-design-course/?tracking_source=trainings-dropdown-design">Graphic Design</a></div>
+                                                                                            <div class="course"><a href="/video-editing-course/?tracking_source=trainings-dropdown-design">Video Editing</a></div>
+                                                                                            <div class="course"><a href="/animation-course/?tracking_source=trainings-dropdown-design">Animation</a></div>
+                                                                                            <div class="course"><a href="/digital-art-course/?tracking_source=trainings-dropdown-design">Digital Art</a></div>
+                                                                                            <div class="course"><a href="/wordpress-course/?tracking_source=trainings-dropdown-design">WordPress</a></div>
+                                                                                            <div class="course"><a href="/colour-theory-course/?tracking_source=trainings-dropdown-design">Colour Theory for Designers</a></div>
+                                                                                            <div class="course"><a href="/adobe-illustrator-course/?tracking_source=trainings-dropdown-design">Adobe Illustrator</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_CreativeArts">
+                                                                                            <div class="course"><a href="/creative-writing-course/?tracking_source=trainings-dropdown-creative-arts">Creative Writing</a></div>
+                                                                                            <div class="course"><a href="/photography-course/?tracking_source=trainings-dropdown-creative-arts">Photography</a></div>
+                                                                                            <div class="course"><a href="/guitar-course/?tracking_source=trainings-dropdown-creative-arts">Guitar</a></div>
+                                                                                            <div class="course"><a href="/calligraphy-course/?tracking_source=trainings-dropdown-creative-arts">Calligraphy</a></div>
+                                                                                            <div class="course"><a href="/acting-course/?tracking_source=trainings-dropdown-creative-arts">Acting</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_Language">
+                                                                                            <div class="course"><a href="/french-course/?tracking_source=trainings-dropdown-language">French Language</a></div>
+                                                                                            <div class="course"><a href="/spanish-language-course/?tracking_source=trainings-dropdown-language">Spanish Language</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_CareerDevelopment">
+                                                                                            <div class="course"><a href="/business-communication-course/?tracking_source=trainings-dropdown-career-development">Business Communication Skills</a></div>
+                                                                                            <div class="course"><a href="/ppt-course/?tracking_source=trainings-dropdown-career-development">Internship & Job Preparation</a></div>
+                                                                                            <div class="course"><a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-dropdown-career-development">How to Ace Coding Interviews</a></div>
+                                                                                            <div class="course"><a href="/interview-preparation-course/?tracking_source=trainings-dropdown-career-development">Interview Preparation</a></div>
+                                                                                            <div class="course"><a href="/quantitative-aptitude-course/?tracking_source=trainings-dropdown-career-development">Quantitative Aptitude</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_Architecture">
+                                                                                            <div class="course"><a href="/autocad-course/?tracking_source=trainings-dropdown-architecture">AutoCAD</a></div>
+                                                                                            <div class="course"><a href="/revit-course/?tracking_source=trainings-dropdown-architecture">Revit</a></div>
+                                                                                            <div class="course"><a href="/autocad-three-d-course/?tracking_source=trainings-dropdown-architecture">AutoCAD 3D</a></div>
+                                                                                    </section>                                    
+                                                                
+                                        <section class="course-list " id="courses_menu_PlacementGuaranteecourses">
+                                                                                            <div class="course"><a href="/full-stack-web-development-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Full Stack Development Course</a></div>
+                                                                                            <div class="course"><a href="/data-science-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Data Science Course</a></div>
+                                                                                            <div class="course"><a href="/human-resource-management-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Human Resource Management Course</a></div>
+                                                                                            <div class="course"><a href="/digital-marketing-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Digital Marketing Course</a></div>
+                                                                                            <div class="course"><a href="/product-management-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Product Management Course</a></div>
+                                                                                            <div class="course"><a href="/ui-ux-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">UI/UX Design Course</a></div>
+                                                                                    </section>                                    
+                                                                    </div>                                                         
+                        </div>
+                                                    <span class="tag tag-80-off">70% OFF</span> 
+                                            </li>  
+
+                                                <li>
+                                <a class="dashboard" href="/dashboard">Dashboard</a>
+                            </li>
+                                                                        <li class="dropdown profile-hover dropdown-treat hidden-xs">
+                            <a href="#" class="dropdown-toggle default-cursor" role="button"><div class="profile_icon_right">A</div> <span class="arrow caret"></span></a>
+                            <ul class="dropdown-menu profile-dropdown" role="menu" id="user_menu" style="display: none;">
+                                <div id="dropdown-user-menu-arrow-key"></div>
+                                <div id="dropdown-user-menu-arrow-key-1"></div>
+                                <li id="username_container" class="treat">
+                                    <span id="profile_name">Ambuj Singh</span><br>
+                                    <span id="profile_email">7ambujsingh@gmail.com</span>
+                                </li>
+                                                                    <li class="divider visible-xs"></li>
+                                    <li class="visible-xs">
+                                        <a href="/dashboard"><img src="/static/images/icons/profile.svg"></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                                                            <li>
+                                            <a href="/referral?isrp_tracking_source=profile_dropdown">
+                                                Refer & Earn
+                                            </a>
+                                        </li>
+                                                                    <li>
+                                    <a href="/logout">
+                                        Logout</a>
+                                </li>
+                            </ul>
+                                            </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+            </div>
+            <div class="container-fluid max-width-container" id="content" ng-controller="verifyCertificateController">
+    <center><h3>Certificate Verification</h3></center>
+    <div id="certificate">
+        <div id="form">
+            <!--<label>Enter certificate number:</label>-->
+            <form method="POST" role="form" id="certificate_verification_form" novalidate  name="certificate_verification_form">
+                <div class="form-inline form-group" ng-class="{true: 'has-error', false: ''}[certificate_verification_form.certificateNumber.$invalid && certificate_verification_form.certificateNumber.$touched]">
+                    <input ng-model="certificateNumber" name="certificateNumber" id="certificateNumber" type="text" value="" class="form-control" placeholder="Enter certificate number" required>        
+                    <div class="help-block" ng-messages="certificate_verification_form.certificateNumber.$error" ng-show="certificate_verification_form.certificateNumber.$touched">
+                        <div ng-messages-include="/static/templates/form-validation-messages.html"></div>
+                    </div>
+                </div>
+                <button class="btn btn-primary form-control" ng-click="verifyCertificate()">Verify</button>
+            </form>
+        </div>
+        <span ng-show="loading"><center><img alt='loading' src='../../../static/images/spinner_blue.gif' ></center></span>
+        <div id="details">
+
+        </div>
+
+    </div>
+    
+</div>
+            <div id="footer">
+    <div class="container">
+        <div>
+            <div class="footer-inner">
+                <div class="inner-footer programming">
+                    <div class="menu-heading">
+                        <p>Programming Trainings</p>
+                    </div>
+                    <div>
+                                                    <div class="item">
+                                <a href="/web-development-course/?tracking_source=trainings-footer-programming"> Web Development</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/python-course/?tracking_source=trainings-footer-programming"> Programming with Python</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/c-plus-plus-course/?tracking_source=trainings-footer-programming"> Programming with C and C++</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/java-course/?tracking_source=trainings-footer-programming"> Core Java</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/android-course/?tracking_source=trainings-footer-programming"> Android App Development</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/hacking-course/?tracking_source=trainings-footer-programming"> Ethical Hacking</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/react-course/?tracking_source=trainings-footer-programming"> React</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/data-structures-algorithms-course/?tracking_source=trainings-footer-programming"> Data Structures & Algorithms</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-programming"> Clinical Trial Analysis & Reporting</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/blockchain-course/?tracking_source=trainings-footer-programming"> Blockchain</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/matlab-course/?tracking_source=trainings-footer-programming"> MATLAB</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/software-testing-course/?tracking_source=trainings-footer-programming"> Software Testing</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/aws-course/?tracking_source=trainings-footer-programming"> Cloud computing with AWS</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/plc-programming-course/?tracking_source=trainings-footer-programming"> PLC Programming</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/product-management-course/?tracking_source=trainings-footer-programming"> Product Management</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/nodejs-course/?tracking_source=trainings-footer-programming"> Node JS</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/sas-programming-course/?tracking_source=trainings-footer-programming"> SAS Programming</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/angular-course/?tracking_source=trainings-footer-programming"> Angular</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/robotic-process-automation-course/?tracking_source=trainings-footer-programming"> Robotic Process Automation</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/ar-vr-course/?tracking_source=trainings-footer-programming"> AR/VR</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/git-course/?tracking_source=trainings-footer-programming"> Git & GitHub</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/voice-apps-course/?tracking_source=trainings-footer-programming"> Voice App Development</a>
+                            </div>
+                                                        <div class="item">
+                                <a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-footer-programming"> How to Ace Coding Interviews</a>
+                            </div>
+                                                </div>
+                </div>
+                                    <div class="inner-footer a1">
+                        <div class="menu-heading">
+                            <p>Programming</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/web-development-course/?tracking_source=trainings-footer-programming">
+                                        Web Development                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/python-course/?tracking_source=trainings-footer-programming">
+                                        Programming with Python                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/c-plus-plus-course/?tracking_source=trainings-footer-programming">
+                                        Programming with C and C++                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/java-course/?tracking_source=trainings-footer-programming">
+                                        Core Java                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/android-course/?tracking_source=trainings-footer-programming">
+                                        Android App Development                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/hacking-course/?tracking_source=trainings-footer-programming">
+                                        Ethical Hacking                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/react-course/?tracking_source=trainings-footer-programming">
+                                        React                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/data-structures-algorithms-course/?tracking_source=trainings-footer-programming">
+                                        Data Structures & Algorithms                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-programming">
+                                        Clinical Trial Analysis & Reporting                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/blockchain-course/?tracking_source=trainings-footer-programming">
+                                        Blockchain                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/matlab-course/?tracking_source=trainings-footer-programming">
+                                        MATLAB                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/software-testing-course/?tracking_source=trainings-footer-programming">
+                                        Software Testing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/aws-course/?tracking_source=trainings-footer-programming">
+                                        Cloud computing with AWS                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/plc-programming-course/?tracking_source=trainings-footer-programming">
+                                        PLC Programming                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/product-management-course/?tracking_source=trainings-footer-programming">
+                                        Product Management                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/nodejs-course/?tracking_source=trainings-footer-programming">
+                                        Node JS                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/sas-programming-course/?tracking_source=trainings-footer-programming">
+                                        SAS Programming                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/angular-course/?tracking_source=trainings-footer-programming">
+                                        Angular                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/robotic-process-automation-course/?tracking_source=trainings-footer-programming">
+                                        Robotic Process Automation                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/ar-vr-course/?tracking_source=trainings-footer-programming">
+                                        AR/VR                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/git-course/?tracking_source=trainings-footer-programming">
+                                        Git & GitHub                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/voice-apps-course/?tracking_source=trainings-footer-programming">
+                                        Voice App Development                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-footer-programming">
+                                        How to Ace Coding Interviews                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a2">
+                        <div class="menu-heading">
+                            <p>Business & Management</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/digital-marketing-course/?tracking_source=trainings-footer-business-and-management">
+                                        Digital Marketing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/excel-course/?tracking_source=trainings-footer-business-and-management">
+                                        Advanced Excel                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/financial-modeling-valuation-course/?tracking_source=trainings-footer-business-and-management">
+                                        Financial Modeling and Valuation                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/business-analytics-course/?tracking_source=trainings-footer-business-and-management">
+                                        Business Analytics                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/hr-course/?tracking_source=trainings-footer-business-and-management">
+                                        Human Resource Management
+                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/business-communication-course/?tracking_source=trainings-footer-business-and-management">
+                                        Business Communication Skills                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/stock-market-trading-course/?tracking_source=trainings-footer-business-and-management">
+                                        Stock Market Trading                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/tally-course/?tracking_source=trainings-footer-business-and-management">
+                                        Tally                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-business-and-management">
+                                        SQL for Data Analytics                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/hr-advanced-course/?tracking_source=trainings-footer-business-and-management">
+                                        Advanced Human Resource Management                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/product-management-course/?tracking_source=trainings-footer-business-and-management">
+                                        Product Management                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/personal-finance-101-course/?tracking_source=trainings-footer-business-and-management">
+                                        Personal Finance 101                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a3">
+                        <div class="menu-heading">
+                            <p>Core Engineering</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/autocad-course/?tracking_source=trainings-footer-core-engineering">
+                                        AutoCAD                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/vlsi-design-course/?tracking_source=trainings-footer-core-engineering">
+                                        VLSI Design                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/solidworks-course/?tracking_source=trainings-footer-core-engineering">
+                                        SOLIDWORKS                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/matlab-course/?tracking_source=trainings-footer-core-engineering">
+                                        MATLAB                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/ansys-course/?tracking_source=trainings-footer-core-engineering">
+                                        Ansys                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/catia-course/?tracking_source=trainings-footer-core-engineering">
+                                        CATIA                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/staad-pro-course/?tracking_source=trainings-footer-core-engineering">
+                                        STAAD Pro                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/plc-programming-course/?tracking_source=trainings-footer-core-engineering">
+                                        PLC Programming                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/arduino-course/?tracking_source=trainings-footer-core-engineering">
+                                        Arduino                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/autocad-three-d-course/?tracking_source=trainings-footer-core-engineering">
+                                        AutoCAD 3D                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/advanced-solidworks-course/?tracking_source=trainings-footer-core-engineering">
+                                        Advanced SOLIDWORKS                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/fusion-360-course/?tracking_source=trainings-footer-core-engineering">
+                                        Fusion 360                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/iot-course/?tracking_source=trainings-footer-core-engineering">
+                                        Internet of Things                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/siemens-nx-course/?tracking_source=trainings-footer-core-engineering">
+                                        Siemens NX                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/three-d-printing-course/?tracking_source=trainings-footer-core-engineering">
+                                        3D Printing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/embedded-systems-course/?tracking_source=trainings-footer-core-engineering">
+                                        Embedded Systems                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/labview-course/?tracking_source=trainings-footer-core-engineering">
+                                        LabVIEW                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/engineering-drawing-course/?tracking_source=trainings-footer-core-engineering">
+                                        Engineering Drawing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/creo-parametric-course/?tracking_source=trainings-footer-core-engineering">
+                                        Creo Parametric                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/pcb-course/?tracking_source=trainings-footer-core-engineering">
+                                        PCB Design                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a4">
+                        <div class="menu-heading">
+                            <p>Data Science</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/machine-learning-course/?tracking_source=trainings-footer-data-science">
+                                        Machine Learning                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/data-science-beginner-course/?tracking_source=trainings-footer-data-science">
+                                        Data Science                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/business-analytics-course/?tracking_source=trainings-footer-data-science">
+                                        Business Analytics                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/clinical-trials-analysis-reporting-course/?tracking_source=trainings-footer-data-science">
+                                        Clinical Trial Analysis & Reporting                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/sql-data-analytics-course/?tracking_source=trainings-footer-data-science">
+                                        SQL for Data Analytics                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/power-bi-course/?tracking_source=trainings-footer-data-science">
+                                        Power BI                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/deep-learning-course/?tracking_source=trainings-footer-data-science">
+                                        Deep Learning                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/tableau-course/?tracking_source=trainings-footer-data-science">
+                                        Tableau                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/sas-programming-course/?tracking_source=trainings-footer-data-science">
+                                        SAS Programming                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/natural-language-processing-course/?tracking_source=trainings-footer-data-science">
+                                        Natural Language Processing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/statistics-course/?tracking_source=trainings-footer-data-science">
+                                        Statistics for Data Science                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a5">
+                        <div class="menu-heading">
+                            <p>Design</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/ui-ux-design-course/?tracking_source=trainings-footer-design">
+                                        UI/UX Design                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/graphic-design-course/?tracking_source=trainings-footer-design">
+                                        Graphic Design                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/video-editing-course/?tracking_source=trainings-footer-design">
+                                        Video Editing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/animation-course/?tracking_source=trainings-footer-design">
+                                        Animation                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/digital-art-course/?tracking_source=trainings-footer-design">
+                                        Digital Art                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/wordpress-course/?tracking_source=trainings-footer-design">
+                                        WordPress                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/colour-theory-course/?tracking_source=trainings-footer-design">
+                                        Colour Theory for Designers                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/adobe-illustrator-course/?tracking_source=trainings-footer-design">
+                                        Adobe Illustrator                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a6">
+                        <div class="menu-heading">
+                            <p>Creative Arts</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/creative-writing-course/?tracking_source=trainings-footer-creative-arts">
+                                        Creative Writing                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/photography-course/?tracking_source=trainings-footer-creative-arts">
+                                        Photography                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/guitar-course/?tracking_source=trainings-footer-creative-arts">
+                                        Guitar                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/calligraphy-course/?tracking_source=trainings-footer-creative-arts">
+                                        Calligraphy                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/acting-course/?tracking_source=trainings-footer-creative-arts">
+                                        Acting                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a7">
+                        <div class="menu-heading">
+                            <p>Language</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/french-course/?tracking_source=trainings-footer-language">
+                                        French Language                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/spanish-language-course/?tracking_source=trainings-footer-language">
+                                        Spanish Language                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a8">
+                        <div class="menu-heading">
+                            <p>Career Development</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/business-communication-course/?tracking_source=trainings-footer-career-development">
+                                        Business Communication Skills                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/ppt-course/?tracking_source=trainings-footer-career-development">
+                                        Internship & Job Preparation                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/how-to-ace-coding-interviews-course/?tracking_source=trainings-footer-career-development">
+                                        How to Ace Coding Interviews                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/interview-preparation-course/?tracking_source=trainings-footer-career-development">
+                                        Interview Preparation                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/quantitative-aptitude-course/?tracking_source=trainings-footer-career-development">
+                                        Quantitative Aptitude                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a9">
+                        <div class="menu-heading">
+                            <p>Architecture</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/autocad-course/?tracking_source=trainings-footer-architecture">
+                                        AutoCAD                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/revit-course/?tracking_source=trainings-footer-architecture">
+                                        Revit                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/autocad-three-d-course/?tracking_source=trainings-footer-architecture">
+                                        AutoCAD 3D                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                        <div class="inner-footer a10">
+                        <div class="menu-heading">
+                            <p>Placement Guarantee courses</p>
+                        </div>
+                        <div>
+                                                            <div>
+                                    <a href="/full-stack-web-development-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        Full Stack Development Course                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/data-science-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        Data Science Course                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/human-resource-management-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        Human Resource Management Course                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/digital-marketing-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        Digital Marketing Course                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/product-management-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        Product Management Course                                    </a>
+                                </div>
+                                                                <div>
+                                    <a href="/ui-ux-specialization/?tracking_source=trainings-footer-placement-guarantee-courses">
+                                        UI/UX Design Course                                    </a>
+                                </div>
+                                                        </div>
+                    </div>
+                                </div>
+            <hr>
+            <div id="footer-bottom">
+                <div class="item_a">
+                    <a href="https://internshala.com/refund_cancellation_policy" target="_blank">Refund Policy</a>
+                </div>
+                <div class="item_b">
+                    <a href="/help_center">Help Center</a>
+                </div>
+                <div class="item_c">
+                    <a href="/sitemap" target="_blank">Sitemap</a>
+                </div>
+                <div class="item_h">
+                    <a href="/blog/?utm_source=trainings-footer" target="_blank">Blog</a>
+                </div>
+                <div class="item_e">
+                    <a href="/ist-scholarship/?utm_source=ist_footer&sds_tracking_source=ist_footer" target="_blank">IST Scholarship</a>
+                </div>
+                <div class="item_f">
+                    <a href="https://internshala.com/terms#student" target="_blank">Terms & Conditions</a>
+                </div>
+                <div class="item_g">
+                    <a href="https://internshala.com/privacy" target="_blank">Privacy Policy</a>
+                </div>
+                <div class="item_i">
+                    <a href="https://internshala.com/" target="_blank">Internshala</a>
+                </div>
+
+                <div class="item_d">
+                    <div class="instagram_icon">
+                        <a href="https://www.instagram.com/internshalatrainings_official/" target="_blank" ><img src="/static/images/footerIcon/instagram.png" alt="HTML tutorial" style="width:24px;height:24px;"></a>
+                    </div>
+                    <div class="linekdin_icon">
+                        <a href="https://www.linkedin.com/showcase/internshala-trainings/" target="_blank" ><img src="/static/images/footerIcon/linkedin.png" alt="HTML tutorial" style="width:24px;height:24px;" ></a>
+                    </div>
+                    <div class="youtube_icon">
+                        <a href="https://www.youtube.com/channel/UC97qxGRmPsyfV0Miz7AxU2A" target="_blank" ><img src="/static/images/footerIcon/youtube.png" alt="HTML tutorial" style="width:24px;height:24px;"></a>
+                    </div>
+                </div>
+                <div class="flex-break d-none d-md-block"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+            
+                
+                <script>var isMobile = '0';</script>
+                <script src="/static/js/pagespeed.1657773672.js"></script>
+
+	
+    </body>
+</html>
