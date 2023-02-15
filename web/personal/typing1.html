@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #textbox {
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="textbox"></textarea><br>
+    <span id="typing-speed">0</span> wpm (words per minute)<br><br>
+    <button id="start-button">Start</button>
+    <button id="stop-button" disabled>Stop</button><br><br>
+    <span id="average-typing-speed">0</span> wpm (average)
+    <script>
+    var typingSpeed = 0;
+    var startTime, endTime;
+    var textbox = $("#textbox");
+    var typingSpeedSpan = $("#typing-speed");
+    var averageTypingSpeedSpan = $("#average-typing-speed");
+    var allTypingSpeeds = [];
+    var timer;
+
+    $("#start-button").click(function () {
+      textbox.removeAttr("disabled");
+      startTime = new Date();
+      timer = setInterval(function () {
+        endTime = new Date();
+        var timeDiff = endTime - startTime;
+        timeDiff /= 1000;
+        typingSpeed = Math.round(textbox.val().split(" ").length / timeDiff * 60);
+        typingSpeedSpan.text(typingSpeed);
+      }, 500);
+      $(this).attr("disabled", true);
+      $("#stop-button").removeAttr("disabled");
+    });
+
+    $("#stop-button").click(function () {
+      clearInterval(timer);
+      textbox.attr("disabled", true);
+      $(this).attr("disabled", true);
+      $("#start-button").removeAttr("disabled");
+      allTypingSpeeds.push(typingSpeed);
+      var totalTypingSpeed = 0;
+      for (var i = 0; i < allTypingSpeeds.length; i++) {
+        totalTypingSpeed += allTypingSpeeds[i];
+      }
+      averageTypingSpeed = totalTypingSpeed / allTypingSpeeds.length;
+      averageTypingSpeedSpan.text(averageTypingSpeed);
+    });
+    </script>
+</body>
+
+</html>
