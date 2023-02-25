@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My App</title>
+</head>
+
+<body>
+    <h1>My App</h1>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name" /><br />
+
+        <label>Email:</label>
+        <input type="email" name="email" /><br />
+
+        <label>Age:</label>
+        <input type="number" name="age" /><br />
+
+        <button type="button" onclick="storeData()">Store Data</button>
+        <button type="button" onclick="displayData()">Display Data</button>
+    </form>
+
+    <ul id="userList"></ul>
+
+    <script>
+        function storeData() {
+            const name = document.getElementsByName('name')[0].value;
+            const email = document.getElementsByName('email')[0].value;
+            const age = document.getElementsByName('age')[0].value;
+
+            const userData = { name, email, age };
+
+            fetch('/user', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(userData)
+            })
+                .then(res => res.text())
+                .then(msg => console.log(msg));
+        }
+
+        function displayData() {
+            fetch('/user')
+                .then(res => res.json())
+                .then(users => {
+                    const userList = document.getElementById('userList');
+                    userList.innerHTML = '';
+
+                    users.forEach(user => {
+                        const li = document.createElement('li');
+                        li.textContent = `Name: ${user.name}, Email: ${user.email}, Age: ${user.age}`;
+                        userList.appendChild(li);
+                    });
+                });
+        }
+    </script>
+</body>
+
+</html>
